@@ -1,0 +1,86 @@
+@font-face {
+    font-family: debug;
+    src: url('./debug.otf');
+}
+
+body {
+    background: #2C3333;
+}
+
+h1 {
+    font-family: debug;
+    color: yellow;
+    font-size: 10rem;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(117, 117, 0);
+}
+
+h3 {
+    color: yellow;
+    text-align: center;
+}
+
+button {
+    height: 200px;
+    width: 200px;
+    margin: 1rem;
+    border-radius: 20%;
+    border: 0.6rem solid;
+    transition: width .2s, height .2s;
+}
+
+.game-content {
+    display: flex;
+    width: min-content;
+    margin: 0 auto;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.btn-container{
+    height: min-content;
+    width: min-content;
+}
+
+.btn-1 {
+    background-color: green;
+}
+
+.btn-2 {
+    background-color: red;
+}
+
+.btn-3 {
+    background-color: yellow;
+}
+
+.btn-4 {
+    background-color: blue;
+}
+/* 
+button:hover {
+    transform: scale(1.15);
+    transition: all .2s;
+} */
+
+.blink {
+    animation-name: blinkAnim;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blinkAnim {
+    0% {
+        transform: scale(1,1);
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.click {
+    background: white !important;
+}
